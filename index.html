@@ -8,6 +8,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <!-- Font Awesome for social icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
   <style>
     body {
       font-family: 'Montserrat', sans-serif;
@@ -35,7 +36,7 @@
       font-weight: 700;
       letter-spacing: 4px;
       line-height: 1.15;
-      text-shadow: 0 0 6px rgba(200, 200, 200, 0.6); /* unified glow */
+      text-shadow: 0 0 6px rgba(200, 200, 200, 0.6);
     }
 
     p {
@@ -77,14 +78,12 @@
     .links a:hover {
       background: #222;
       border: 2px solid #ccc;
-      box-shadow: 0 0 6px rgba(200, 200, 200, 0.6); /* unified glow */
+      box-shadow: 0 0 6px rgba(200, 200, 200, 0.6);
       transform: translateY(-2px);
     }
 
     footer {
       margin: 2rem 0;
-      font-size: 0.9rem;
-      color: #aaa;
       text-align: center;
     }
 
@@ -93,14 +92,14 @@
       margin: 0 auto;
     }
 
-    footer p:last-child {
-      margin-top: 1rem;
+    /* Footer icons */
+    footer .social {
+      margin-bottom: 1rem;
     }
 
-    /* Footer icons */
     footer a {
-      margin: 0 0.8rem;
-      font-size: 1.8rem; /* 20% bigger */
+      margin: 0 1rem;
+      font-size: 2.7rem; /* 50% bigger than before */
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
@@ -115,9 +114,16 @@
     }
 
     footer a:hover {
-      transform: scale(1.1); /* zoom */
-      box-shadow: 0 0 6px rgba(200, 200, 200, 0.6); /* unified glow */
+      transform: scale(1.1);
+      box-shadow: 0 0 6px rgba(200, 200, 200, 0.6);
       border-radius: 50%;
+    }
+
+    /* Smaller copyright */
+    footer p.copy {
+      font-size: 0.45rem; /* 50% smaller */
+      color: #aaa;
+      margin: 0;
     }
 
     @media (max-width: 480px) {
@@ -130,7 +136,7 @@
   <div class="wrap">
     <header>
       <h1>Megan Hutchison</h1>
-      <p>Visual Effects Compositor</p>
+      <p>Digital Compositor</p>
     </header>
 
     <main>
@@ -146,11 +152,11 @@
 
   <footer>
     <div class="wrap">
-      <p>© 2025 Megan Hutchison</p>
-      <p>
+      <div class="social">
         <a href="https://www.linkedin.com/in/mlhutchison/" target="_blank"><i class="fab fa-linkedin"></i></a>
         <a href="https://www.imdb.com/name/nm4067090/" target="_blank"><i class="fab fa-imdb"></i></a>
-      </p>
+      </div>
+      <p class="copy">© 2025 Megan Hutchison</p>
     </div>
   </footer>
 </body>
