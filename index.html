@@ -42,7 +42,7 @@
       font-weight: 700;
       letter-spacing: 4px;
       line-height: 1.15;
-      text-shadow: 0 0 12px #250d31; /* glow */
+      text-shadow: 0 0 12px #54236c; /* updated glow */
     }
 
     p {
@@ -69,7 +69,7 @@
       display: inline-block;
       margin: 0.8rem 1.5rem;
       padding: 0.9rem 2rem;
-      background: #250d31;
+      background: #46334f; /* updated colour */
       color: #f5f5f5;
       text-decoration: none;
       border-radius: 50px;
@@ -81,9 +81,9 @@
     }
 
     .links a:hover {
-      background: #250d31;
-      border: 2px solid #250d31;
-      box-shadow: 0 0 12px #250d31;
+      background: #46334f;
+      border: 2px solid #46334f;
+      box-shadow: 0 0 12px #46334f;
       transform: scale(1.08);
     }
 
@@ -104,26 +104,31 @@
       margin: 0 0.4rem;
       font-size: 3.4rem;
       text-decoration: none;
-      transition: transform 0.25s ease;
-    }
-
-    footer a:hover {
-      transform: scale(1.2); /* hover zoom */
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
     }
 
     /* Gmail red */
-    footer a .fa-envelope {
-      color: #EA4335;
+    footer a .fa-envelope { color: #EA4335; }
+    footer a:hover .fa-envelope { 
+      transform: scale(1.35);
+      box-shadow: 0 0 12px #EA4335; 
+      border-radius: 50%;
     }
 
     /* LinkedIn blue */
-    footer a .fa-linkedin {
-      color: #0A66C2;
+    footer a .fa-linkedin { color: #0A66C2; }
+    footer a:hover .fa-linkedin { 
+      transform: scale(1.35);
+      box-shadow: 0 0 12px #0A66C2;
+      border-radius: 50%;
     }
 
     /* IMDb yellow */
-    footer a .fa-imdb {
-      color: #F5C518;
+    footer a .fa-imdb { color: #F5C518; }
+    footer a:hover .fa-imdb { 
+      transform: scale(1.35);
+      box-shadow: 0 0 12px #F5C518;
+      border-radius: 8px; /* IMDb logo is rectangular */
     }
 
     /* Copyright */
