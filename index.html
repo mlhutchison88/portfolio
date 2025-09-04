@@ -8,6 +8,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <!-- Font Awesome for social icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png">
 
   <style>
     body {
@@ -19,14 +21,14 @@
       text-transform: uppercase;
       display: flex;
       flex-direction: column;
-      align-items: center;   /* centers horizontally */
+      align-items: center;
     }
 
     .wrap {
       width: 100%;
-      max-width: 800px;      /* keeps content narrow */
+      max-width: 800px;
       text-align: center;
-      padding: 0 1rem;       /* padding for safety on small screens */
+      padding: 0 1rem;
     }
 
     header {
@@ -55,6 +57,7 @@
       height: 450px;
       margin: 2rem 0;
       border: none;
+      display: block;
     }
 
     .links {
@@ -88,7 +91,7 @@
       margin: 2rem 0;
       width: 100%;
       display: flex;
-      justify-content: center; /* keeps footer centered */
+      justify-content: center;
     }
 
     footer .wrap {
@@ -96,18 +99,11 @@
       text-align: center;
     }
 
-    /* Footer icons container */
-    footer .social {
-      display: flex;
-      justify-content: center;
-      gap: 2rem; /* spacing between icons */
-      margin-bottom: 1rem;
-    }
-
     /* Footer icons */
     footer a {
-      font-size: 2.7rem; /* 50% bigger */
-      transition: transform 0.3s ease;
+      margin: 0 0.8rem;
+      font-size: 2.7rem; /* 50% larger than before */
+      text-decoration: none;
     }
 
     /* LinkedIn blue */
@@ -120,15 +116,11 @@
       color: #F5C518;
     }
 
-    footer a:hover {
-      transform: scale(1.1); /* smooth enlarge */
-    }
-
-    /* Smaller copyright */
-    footer p.copy {
+    /* Copyright */
+    footer p {
       font-size: 0.45rem; /* 50% smaller */
+      margin-top: 1.2rem;
       color: #aaa;
-      margin: 0;
     }
 
     @media (max-width: 480px) {
@@ -157,11 +149,11 @@
 
   <footer>
     <div class="wrap">
-      <div class="social">
+      <p>
         <a href="https://www.linkedin.com/in/mlhutchison/" target="_blank"><i class="fab fa-linkedin"></i></a>
         <a href="https://www.imdb.com/name/nm4067090/" target="_blank"><i class="fab fa-imdb"></i></a>
-      </div>
-      <p class="copy">© 2025 Megan Hutchison</p>
+      </p>
+      <p>© 2025 Megan Hutchison</p>
     </div>
   </footer>
 </body>
