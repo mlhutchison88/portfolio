@@ -33,9 +33,9 @@
       margin: 0 0 0.5rem 0;
       font-size: 4rem;
       font-weight: 700;
-      letter-spacing: 4px; /* adjusted spacing */
+      letter-spacing: 4px;
       line-height: 1.15;
-      text-shadow: 0 0 6px rgba(200, 200, 200, 0.6);
+      text-shadow: 0 0 6px rgba(200, 200, 200, 0.6); /* unified glow */
     }
 
     p {
@@ -58,6 +58,7 @@
       margin-bottom: 3rem;
     }
 
+    /* Buttons */
     .links a {
       display: inline-block;
       margin: 1rem;
@@ -76,7 +77,7 @@
     .links a:hover {
       background: #222;
       border: 2px solid #ccc;
-      box-shadow: 0 0 6px rgba(200, 200, 200, 0.6);
+      box-shadow: 0 0 6px rgba(200, 200, 200, 0.6); /* unified glow */
       transform: translateY(-2px);
     }
 
@@ -84,17 +85,39 @@
       margin: 2rem 0;
       font-size: 0.9rem;
       color: #aaa;
+      text-align: center;
     }
 
+    footer .wrap {
+      width: min(80%, 800px);
+      margin: 0 auto;
+    }
+
+    footer p:last-child {
+      margin-top: 1rem;
+    }
+
+    /* Footer icons */
     footer a {
-      color: #f5f5f5;
       margin: 0 0.8rem;
-      font-size: 1.5rem;
-      transition: color 0.3s ease;
+      font-size: 1.8rem; /* 20% bigger */
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    /* LinkedIn blue */
+    footer a .fa-linkedin {
+      color: #0A66C2;
+    }
+
+    /* IMDb yellow */
+    footer a .fa-imdb {
+      color: #F5C518;
     }
 
     footer a:hover {
-      color: #ccc;
+      transform: scale(1.1); /* zoom */
+      box-shadow: 0 0 6px rgba(200, 200, 200, 0.6); /* unified glow */
+      border-radius: 50%;
     }
 
     @media (max-width: 480px) {
@@ -114,17 +137,21 @@
       <iframe class="reel" src="https://www.youtube.com/embed/QcgcbDwAs90" allowfullscreen></iframe>
 
       <div class="links">
-        <a href="Megan_Hutchison_CV082025.pdf" target="_blank">Download CV</a>
-        <a href="Megan_Hutchison_Breakdown0825.pdf" target="_blank">Download Breakdown</a>
-        <a href="mailto:megan.hutchison@email.com">Contact Me</a>
+        <a href="Megan_Hutchison_CV082025.pdf" target="_blank">CV</a>
+        <a href="Megan_Hutchison_Breakdown0825.pdf" target="_blank">Breakdown</a>
+        <a href="mailto:meganhvfx@gmail.com">Contact</a>
       </div>
     </main>
   </div>
 
-<footer>
-  <p>© 2025 Megan Hutchison</p>
-  <p>
-    <a href="https://www.linkedin.com/in/mlhutchison/" target="_blank"><i class="fab fa-linkedin"></i></a>
-    <a href="https://www.imdb.com/name/nm4067090/" target="_blank"><i class="fab fa-imdb"></i></a>
-  </p>
-</footer>
+  <footer>
+    <div class="wrap">
+      <p>© 2025 Megan Hutchison</p>
+      <p>
+        <a href="https://www.linkedin.com/in/mlhutchison/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.imdb.com/name/nm4067090/" target="_blank"><i class="fab fa-imdb"></i></a>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
