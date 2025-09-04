@@ -67,7 +67,7 @@
     /* Buttons */
     .links a {
       display: inline-block;
-      margin: 1rem;
+      margin: 1rem 0.5rem; /* reduced gap */
       padding: 0.8rem 1.5rem;
       background: #222;
       color: #f5f5f5;
@@ -101,14 +101,19 @@
 
     /* Footer icons */
     footer a {
-      margin: 0 0.8rem;
-      font-size: 2.7rem; /* 50% larger */
+      margin: 0 0.4rem; /* smaller gap */
+      font-size: 3.4rem; /* 25% larger */
       text-decoration: none;
+      transition: transform 0.25s ease; /* smooth zoom */
+    }
+
+    footer a:hover {
+      transform: scale(1.15); /* zoom in slightly on hover */
     }
 
     /* Gmail red */
     footer a .fa-envelope {
-      color: #EA4335;
+      color: #9a1313;
     }
 
     /* LinkedIn blue */
@@ -131,6 +136,7 @@
     @media (max-width: 480px) {
       h1 { font-size: 3rem; letter-spacing: 3px; }
       p  { font-size: 1.1rem; letter-spacing: 2px; }
+      footer a { font-size: 2.8rem; } /* scale down for mobile */
     }
   </style>
 </head>
