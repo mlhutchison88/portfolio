@@ -61,13 +61,13 @@
     }
 
     .links {
-      margin-bottom: 3rem;
+      margin-bottom: 1.5rem; /* reduced space before icons */
     }
 
     /* Buttons */
     .links a {
       display: inline-block;
-      margin: 1rem 0.5rem; /* reduced gap */
+      margin: 0.8rem 0.4rem; /* reduced gap */
       padding: 0.8rem 1.5rem;
       background: #222;
       color: #f5f5f5;
@@ -77,18 +77,18 @@
       font-size: 1rem;
       letter-spacing: 1px;
       border: 2px solid transparent;
-      transition: all 0.3s ease;
+      transition: all 0.25s ease; /* smooth hover */
     }
 
     .links a:hover {
       background: #222;
       border: 2px solid #ccc;
       box-shadow: 0 0 6px rgba(200, 200, 200, 0.6);
-      transform: translateY(-2px);
+      transform: scale(1.08); /* zoom effect */
     }
 
     footer {
-      margin: 2rem 0;
+      margin: 1.5rem 0; /* tighter spacing */
       width: 100%;
       display: flex;
       justify-content: center;
@@ -108,7 +108,7 @@
     }
 
     footer a:hover {
-      transform: scale(1.15); /* zoom in slightly on hover */
+      transform: scale(1.15); /* zoom in on hover */
     }
 
     /* Gmail red */
@@ -129,7 +129,7 @@
     /* Copyright */
     footer p {
       font-size: 0.45rem; /* 50% smaller */
-      margin-top: 1.2rem;
+      margin-top: 0.8rem; /* less space */
       color: #aaa;
     }
 
@@ -156,7 +156,6 @@
       </div>
     </main>
   </div>
-
   <footer>
     <div class="wrap">
       <p>
